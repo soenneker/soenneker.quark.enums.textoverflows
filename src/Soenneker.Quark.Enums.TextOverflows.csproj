@@ -1,13 +1,48 @@
-using Soenneker.Tests.Unit;
-using Xunit;
+<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk">
 
-namespace Soenneker.Quark.Variables.Bootstrap;
+    <PropertyGroup>
+        <TargetFrameworks>net9.0</TargetFrameworks>
+        <Nullable>enable</Nullable>
+        <Platforms>AnyCPU</Platforms>
+        <RootNamespace>Soenneker.Quark.Enums</RootNamespace>
+        <GenerateDefaultNamespace>false</GenerateDefaultNamespace>
+        <NoWarn>$(NoWarn);1591;IDE0130</NoWarn>
+    </PropertyGroup>
 
-public sealed class BootstrapTests : UnitTest
-{
-    [Fact]
-    public void Default()
-    {
+    <PropertyGroup>
+        <Description>An HTML CSS keyword set in .NET enumeration form</Description>
+        <Version Condition="'$(BUILD_VERSION)' == ''">3.0.0</Version>
+        <Version Condition="'$(BUILD_VERSION)' != ''">$(BUILD_VERSION)</Version>
+        <AssemblyName>Soenneker.Quark.Enums.TextOverflows</AssemblyName>
+        <PackageId>Soenneker.Quark.Enums.TextOverflows</PackageId>
+        <PackageTags>quark enums textoverflow css html enum text-overflow csharp dotnet c# .net</PackageTags>
+        <Copyright>Copyright © 2025 Jake Soenneker</Copyright>
+        <Authors>Jake Soenneker</Authors>
+        <Company>https://soenneker.com</Company>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <IsPackable>true</IsPackable>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/soenneker/soenneker.quark.enums.textoverflows</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/soenneker/soenneker.quark.enums.textoverflows</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryBranch>main</RepositoryBranch>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <LangVersion>latest</LangVersion>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.png</PackageIcon>
+    <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild></PropertyGroup>
 
-    }
-}
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\" />
+        <None Include="..\LICENSE" Pack="true" PackagePath="\" />
+        <None Include="..\icon.png" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Intellenum" Version="2.0.0" />
+    </ItemGroup>
+</Project>
