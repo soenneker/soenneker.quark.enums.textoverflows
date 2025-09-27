@@ -6,7 +6,7 @@ namespace Soenneker.Quark.Enums;
 /// An HTML CSS keyword set in .NET enumeration form
 /// </summary>
 [Intellenum<string>]
-public sealed partial class TextOverflowKeywordKeyword
+public sealed partial class TextOverflowKeyword
 {
     public static readonly TextOverflowKeyword Clip = new("clip");
     public static readonly TextOverflowKeyword Ellipsis = new("ellipsis");
