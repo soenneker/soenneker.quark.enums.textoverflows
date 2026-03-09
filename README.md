@@ -1,1 +1,16 @@
-Initializing...
+I
+[![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.quark.enums.textoverflows/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.quark.enums.textoverflows/actions/workflows/codeql.yml)
+n
+i
+t
+i
+a
+l
+i
+z
+i
+n
+g
+.
+.
+.
